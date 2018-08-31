@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: darkslategrey;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.command {
+    margin-left: 40px;
+    list-style: circle;
+}
+
+.answer {
+    margin-left: 80px;
+}
+
+ul.links {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul.links > li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.code, a {
+    color: red;
+}
+
+.back {
+    display: block;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Basic Network Terms</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main>
+    <main>
+        <a href=".." class="back">Back</a>
+        <div class="exercise">
+            <h2>Understanding Basic Network Terms</h2>
+            <p class="command">What is your public IP address right now, and how did you find it?</p>
+            <p class="answer code">5.179.80.204</p>
+            <p class="answer code">http://www.whatsmyip.org/</p>
+            <p class="command">What is your private IP address right now (do this both at home and in school), and
+                who/what gave you that address?</p>
+            <p class="answer code">$ ipconfig > IPv4 Address</p>
+            <p class="answer">The address was given to me by the DHCP on the schools network</p>
+            <p class="command">What’s special about these address ranges?</p>
+            <p class="answer">These addresses are used for private addresses.</p>
+            <p class="command">What’s special about this ip-address: <span class="code">127.0.0.1</span>?</p>
+            <p class="answer"><span class="code">127.0.0.1</span> is the loopback ip adress for the local computer
+                (called localhost).</p>
+            <p class="command">What kind of service would you expect to find on a server using these ports: <span
+                    class="code">22</span>, <span class="code">23</span>, <span class="code">25</span>,
+                <span class="code">53</span>, <span class="code">80</span>, <span class="code">443</span>?</p>
+            <p class="answer">Since the server uses 53 (dns), 80 (http) and 443 (https) i would assume that the server
+                hosts a website.</p>
+            <p class="command">What is the IP address of <span class="code">studypoints.dk</span> and how did you find
+                it?</p>
+
+            <p class="answer">$ ping studypoints.dk</p>
+            <p class="answer code">165.227.137.75</p>
+            <p class="command">If you write <span class="code">https://studypoints.dk</span> in your browser, how did
+                “it” figure out that it should go to the IP address you discovered above?</p>
+            <p class="answer"> The browser performs a DNS lookup to get the ip address of the website.</p>
+            <p class="command">Explain shortly the purpose of an ip-address and a port-number and why we need both</p>
+            <p class="answer">The purpose of an ip-address is to identify devices on a network. Ports are the endpoints
+                of communication. It's not enough to deliver data to the correct device. An application or protocol on
+                the device listens to incoming data on ports.</p>
+            <p class="command">What is your (nearest) DNS server,?</p>
+            <p class="answer">Yes</p>
+            <p class="command">What is (conceptually) the DNS system and the purpose with a DNS Server?</p>
+            <p class="answer">The DNS system maps domains to ip addresses. The point of a DNS server is to allow DNS
+                lookups.</p>
+            <p class="command">What is your current Gateway, and how did you find it?</p>
+            <p class="answer code">$ ipconfig</p>
+            <p class="answer code">Default Gateway . . . . . . . . . : 10.50.128.1</p>
+            <p class="command">What is the address of your current DHCP-Server, and how did you find it?</p>
+            <p class="answer code">$ ipconfig /all</p>
+            <p class="answer code">$ DHCP Server . . . . . . . . . . . : 10.255.1.10</p>
+            <p class="command">Explain (conceptually) about the TCP/IP-protocol stack</p>
+            <p class="answer">The TCP/IP-protocol is divided into layers.</p>
+            <p class="answer">The application layer is the top layer of TCP/IP protocol suite. This layer includes
+                applications or processes that use transport layer protocols to deliver the data to destination
+                computers.</p>
+            <p class="answer">The transport layer receives data from theapplication layer above it and transports it to
+                some destination.</p>
+            <p class="answer">
+                The network layer, also known as Internet layer. The main purpose of this layer is to organize or handle
+                the movement of data on a network.
+            </p>
+            <p class="answer">The link layer. This layer is also known as network interface layer. This layer normally
+                consists of device drivers in the OS and the network interface card attached to the system. </p>
+            <p class="command">Explain about the HTTP Protocol</p>
+            <p class="answer">The HTTP protocol defines data communication for the world wide web.</p>
+            <p class="command">Explain (conceptually) how HTTP and TCP/IP are connected (what can HTTP do, and where
+                does it fit into
+                TCP/IP)</p>
+            <p class="answer">The HTTP protocol resides in the Application Layer of the TCP/IP-protocol. HTTP uses
+                TCP-IP.</p>
+        </div>
+    </main>
+</body>
+</html>

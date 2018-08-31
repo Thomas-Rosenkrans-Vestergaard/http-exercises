@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Understanding Reverse proxy and SSL</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<main>
+    <a href=".." class="back">Back</a>
+    <div class="exercise">
+        <h2>Understanding Reverse proxy and SSL</h2>
+        <p class="command">
+            What is the purpose of Nginx (a reverse proxy) as used in this week
+        </p>
+        <p class="answer">The <span class="code">nginx</span> reverse proxy we created is responsible for encrypting
+            the communication between the client and our tomcat server. Our reverse proxy could alternatively
+            forward requests to multiple servers.</p>
+        <p class="command">
+            Who is your certificate issued to
+        </p>
+        <p class="answer">
+            To me.
+        </p>
+        <p class="command">
+            What is the expiry date for your certificate
+        </p>
+        <p class="answer">
+            <a href="https://letsencrypt.org/2015/11/09/why-90-days.html">The certificate is valid for 90 days.</a>
+        </p>
+        <p class="command">
+            Who/what guarantees that your certificate is valid and not a certificate from a “man in the middle”.
+        </p>
+        <p class="answer">
+            <a href="https://letsencrypt.org/">Lets Encrypt</a> is the certificate authority that guarantees that my
+            certificate is valid and not a certificate from a “man in the middle”.
+        </p>
+        <p class="command">
+            What is the value of the public key, contained in your certificate
+        </p>
+        <pre class="answer code" style="font-family: monospace">
+        30 82 01 0a 02 82 01 01 00 bc 06 de 07 a9 9b 07 e1 9d 3b c2 5f 46 90 01 10 09 f6 47
+        52 29 cb 1f 57 97 75 54 72 f7 ff d9 f9 9e 7d 97 0a 5d 44 c6 ad 19 f9 26 bb ac b7 d8
+        d9 ea a4 c2 86 a5 6d b6 3d 23 57 a1 ee 99 a1 94 3a 0f a9 0b 1f fd 38 bf 8c 81 64 05
+        04 6b 2a 89 02 33 42 a6 a1 5b 89 9a 47 67 0d 2e 39 d3 ba 30 8f 41 5b 65 dd 79 43 e8
+        c1 a8 f8 86 47 c4 6f 38 aa 7a 9e c5 87 f1 de 55 48 0a 7d 50 d0 93 3a 0a 42 3d 05 b4
+        7e f9 1b a6 ad 9b 53 70 98 b0 c7 1d 5f 9a d6 05 42 22 e2 49 6e 71 f5 e3 75 39 8c 98
+        3d fb e4 46 4c 1f a2 a8 aa 9a 16 79 1d ed 25 f1 66 9b b3 d6 d6 90 7f 0d b1 a6 ed 9b
+        76 6f 04 b4 e0 dd 9f 7e 34 bb df 4b 15 c3 f5 55 71 df f2 2e f2 27 94 d3 84 9b d6 27
+        48 ad fc ad 39 20 c3 c9 a8 61 3b f4 ff 35 14 89 9a 35 07 dd 65 54 11 e6 15 68 c7 2f
+        fd 38 ff 1a 6c e4 7e a7 94 8c 18 6e 83 02 03 01 00 01
+    </pre>
+    </div>
+</main>
+</body>
+</html>
